@@ -1,0 +1,81 @@
+html, body { 
+    --color-1: whitesmoke;
+    --color-2: #dcedc1; 
+    --color-3: #cbe3ff; 
+    --color-4: #ff827b; 
+    --color-5: #f55e6a;
+    --color-6: #af266d;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 135px;
+    background-image: url("/dice.jpg");
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container {
+    width: 400px;
+    text-align: center;
+    margin: 0 auto;
+    background-color: var(--color-2);
+    box-shadow: -2px 12px 18px 32px rgba(95, 95, 95, 0.5);
+    padding: 50px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.players {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.dice {
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background-color: var(--color-1);
+    margin: 0 auto;
+    font-size: 80px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    color: black;
+    font-weight: bold;
+    padding: 20px 30px;
+    font-size: 20px;
+    margin: 40px auto;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#rollBtn {
+    background-color: var(--color-4);
+}
+
+#resetBtn {
+    background-color: var(--color-6);
+}
+
+button:focus {
+    outline: none;
+}
+
+#resetBtn {
+    display: none;
+}
+
+.active {
+    box-shadow: -2px 6px 18px 3px rgba(0,0,0,0.75);
+}
